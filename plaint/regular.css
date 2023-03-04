@@ -1,0 +1,5 @@
+/* regular.css */
+:root {
+  --write-bg-color: transparent;
+  --back-drop-filter: blur(15px);
+}

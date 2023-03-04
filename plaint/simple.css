@@ -1,0 +1,5 @@
+/* simple.css */
+:root {
+  --write-bg-color: var(--bg-color);
+  --back-drop-filter: none;
+}

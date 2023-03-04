@@ -1,0 +1,1066 @@
+/* base.css */
+html {
+  background-color: var(--bg-color);
+  font-size: 16px;
+  font-family: var(--text-font-family);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--ui-font-family);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+body content {
+  background: var(--bg-img) no-repeat center center;
+  background-size: cover;
+}
+
+#write {
+  font-family: var(--text-font-family);
+  margin: 5em auto;
+  max-width: 800px;
+  text-align: justify;
+  line-height: 2;
+  background-color: var(--write-bg-color);
+  box-shadow: var(--default-shadow-color) 0 0 10px 2px;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#write:after,
+ul.dropdown-menu:before,
+#typora-sidebar:before,
+footer.ty-footer:before,
+#typora-quick-open:before,
+.modal-content:before {
+  content: "";
+  display: block;
+  width: 100%;
+  backdrop-filter: var(--back-drop-filter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -99;
+  min-height: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  pointer-events: none;
+  background-blend-mode: overlay;
+}
+
+#write:after,
+ul.dropdown-menu:before,
+#typora-sidebar:before,
+footer.ty-footer:before,
+#typora-quick-open:before,
+.modal-content:before {
+  content: "";
+  display: block;
+  width: 100%;
+  backdrop-filter: var(--back-drop-filter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -99;
+  min-height: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  pointer-events: none;
+  background-blend-mode: overlay;
+}
+
+footer.ty-footer:before {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-top-right-radius: 20px;
+}
+
+#write:after,
+ul.dropdown-menu:before,
+#typora-sidebar:before,
+footer.ty-footer:before {
+  font-size: 0;
+  height: 0;
+  background-color: var(--blur-bg-color);
+  background-image: var(--doted-bg-image);
+}
+
+#write .md-meta {
+  color: var(--text-color);
+}
+
+/* ----- Strong ----- */
+#write strong {
+  font-family: var(--song-font-family);
+  text-shadow: 0 0 5px;
+}
+
+/* ----- em ----- */
+#write [md-inline="em"].md-pair-s {
+  color: var(--inactivate);
+  text-decoration: underline;
+}
+
+/* ----- Notification ----- */
+#md-notification {
+  box-shadow: var(--default-shadow-color) 0 0 10px 0;
+  padding: 10px;
+}
+
+/* ----- Headings ----- */
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  color: var(--text-color);
+  font-family: var(--head-font-family);
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#write h1:hover,
+#write h2:hover,
+#write h3:hover,
+#write h4:hover,
+#write h5:hover,
+#write h6:hover {
+  color: var(--text-hover-color);
+}
+
+#write h1 {
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 5px solid var(--reverse-color-lighter);
+}
+
+#write h1:hover {
+  border-bottom: 5px solid var(--text-hover-color);
+}
+
+#write h2 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--reverse-color-lighter);
+}
+
+#write h2:hover {
+  border-bottom: 2px solid var(--text-hover-color);
+}
+
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  padding-left: 0.2em;
+  border-left: 2px solid white;
+}
+
+#write h3::after,
+#write h4::after,
+#write h5::after,
+#write h6::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: calc(-2px + -0.25em);
+  height: 80%;
+  width: 0.25em;
+  background-color: var(--reverse-color);
+  border-top-left-radius: 0.125em;
+  border-bottom-left-radius: 0.125em;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#write h3 {
+  font-size: 2rem;
+}
+
+#write h3::after {
+  background-color: var(--h3-decorate-color);
+}
+
+#write h3:hover::after {
+  box-shadow: var(--h3-decorate-color) -2px 0 10px -1px;
+  background-color: var(--h3-decorate-hovered-color);
+}
+
+#write h4 {
+  font-size: 1.5rem;
+}
+
+#write h4::after {
+  background-color: var(--h4-decorate-color);
+}
+
+#write h4:hover::after {
+  box-shadow: var(--h4-decorate-color) -2px 0 10px -1px;
+  background-color: var(--h4-decorate-hovered-color);
+}
+
+#write h5 {
+  font-size: 1.25rem;
+}
+
+#write h5::after {
+  background-color: var(--h5-decorate-color);
+}
+
+#write h5:hover::after {
+  box-shadow: var(--h5-decorate-color) -2px 0 10px -1px;
+  background-color: var(--h5-decorate-hovered-color);
+}
+
+#write h6 {
+  font-size: 1.1rem;
+}
+
+#write h6::after {
+  background-color: var(--h6-decorate-color);
+}
+
+#write h6:hover::after {
+  box-shadow: var(--h6-decorate-color) -2px 0 10px -1px;
+  background-color: var(--h6-decorate-hovered-color);
+}
+
+/* ----- Table ----- */
+
+/* 为表格上方的操作按钮预留空间 */
+#write .md-table-fig {
+  margin-top: 32px;
+}
+
+#write table.md-table {
+  background-color: var(--table-bg-color);
+  margin: 5px;
+  max-width: calc(100% - 10px);
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: var(--default-shadow-color) 0 0 5px 0;
+}
+
+#write table.md-table td,
+#write table.md-table th {
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#write table.md-table td {
+  background-color: var(--table-cell-color);
+  padding: 12px 24px;
+  border-left: 1px solid var(--reverse-color);
+  border-bottom: 1px solid var(--reverse-color);
+}
+
+#write table.md-table th {
+  background-color: var(--table-head-color);
+  background-image: var(--doted-bg-image);
+  padding: 12px 24px;
+  border-left: 1px solid var(--reverse-color);
+  border-bottom: 1px solid var(--reverse-color);
+}
+
+#write table.md-table td:enabled,
+#write table.md-table td:hover {
+  background-color: var(--table-cell-selected-color);
+}
+
+#write table.md-table th:enabled,
+#write table.md-table th:hover {
+  background-color: var(--table-head-selected-color);
+}
+
+/* 不留外边框 */
+#write table.md-table>tr>td:first-child,
+#write table.md-table>tr>th:first-child {
+  border-left: 0;
+}
+
+#write table.md-table>tr:last-child>td {
+  border-bottom: 0;
+}
+
+/* 四角圆弧 */
+#write table.md-table>tr:first-child>th:first-child {
+  border-top-left-radius: 5px;
+}
+
+#write table.md-table>tr:first-child>th:last-child {
+  border-top-right-radius: 5px;
+}
+
+#write table.md-table>tr:last-child>td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+#write table.md-table>tr:last-child>td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+/* ----- Html Table ----- */
+
+#write .md-htmlblock table {
+  background-color: var(--table-bg-color);
+  margin: 5px;
+  max-width: calc(100% - 10px);
+  border-collapse: collapse;
+  box-shadow: var(--default-shadow-color) 0 0 5px 0;
+}
+
+#write .md-htmlblock table td,
+#write .md-htmlblock table th {
+  border: 1px solid var(--reverse-color);
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#write .md-htmlblock table td {
+  background-color: var(--table-cell-color);
+  padding: 12px 24px;
+}
+
+#write .md-htmlblock table th {
+  background-color: var(--table-head-color);
+  background-image: var(--doted-bg-image);
+  padding: 12px 24px;
+}
+
+#write .md-htmlblock table td:enabled,
+#write .md-htmlblock table td:hover {
+  background-color: var(--table-cell-selected-color);
+}
+
+#write .md-htmlblock table th:enabled,
+#write .md-htmlblock table th:hover {
+  background-color: var(--table-head-selected-color);
+}
+
+/* 仅取消两侧外边框 */
+
+#write .md-htmlblock table tr th:first-child,
+#write .md-htmlblock table tr td:first-child {
+  border-left: none;
+}
+
+#write .md-htmlblock table tr th:last-child,
+#write .md-htmlblock table tr td:last-child {
+  border-right: none;
+}
+
+/* ----- Mark ----- */
+mark {
+  display: inline-block;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  background-color: var(--mark-bg-color);
+  color: var(--mark-text-color);
+  box-shadow: var(--default-shadow-color) 1px 1px 10px 2px;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+mark:hover {
+  background-color: var(--mark-hover-bg-color);
+  box-shadow: var(--mark-bg-color) 0 0 0.5em -0.1em;
+}
+
+/* ----- Code ----- */
+code {
+  font-family: var(--code-font-family);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  color: var(--code-text-color);
+  background-color: var(--code-bg-color);
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  box-shadow: var(--code-bg-color) 0 0 0.5em -0.25em;
+}
+
+/* ----- Block Quote ----- */
+#write blockquote {
+  padding: 1em;
+  padding-left: 1.75em;
+  background-color: var(--quote-background-color);
+  border: 1.5px solid var(--quote-border-color);
+  border-left: 10px solid var(--quote-border-color);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+#write blockquote:target {
+  background-color: var(--quote-background-focused-color);
+  border-color: var(--quote-border-focused-color);
+}
+
+/* ----- Code Mirror ----- */
+#write .md-fences {
+  font-variant-ligatures: common-ligatures historical-ligatures;
+  padding: 20px 15px;
+  margin: 35px 0;
+  font-family: var(--code-font-family);
+  background-color: var(--codeMirror-bg-color);
+  box-shadow: var(--default-shadow-color) 2px 2px 10px 0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#write .CodeMirror.cm-s-inner,
+#write .CodeMirror-scroll {
+  background-color: transparent;
+}
+
+#write .CodeMirror-gutters {
+  border-right: 1px solid var(--codeMirror-gutter-border-color);
+}
+
+#write .CodeMirror-linenumber {
+  color: var(--codeMirror-lineNumber-color);
+}
+
+#write .md-fences::after {
+  content: attr(lang);
+  font-family: var(--tip-font-family);
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-style: italic;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 5;
+}
+
+#write .code-tooltip {
+  background-color: var(--code-tooltip-color);
+  font-family: var(--tip-font-family);
+}
+
+#write .md-rawblock-input {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#write>div>div.md-htmlblock-panel>div.md-rawblock-input {
+  color: #0084ff;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+  border-color: var(--codeMirror-cursor-color);
+}
+
+/* ----- HTML BLock ----- */
+#write .md-htmlblock,
+#write .md-rawblock-input {
+  font-family: var(--code-font-family);
+}
+
+#write .md-rawblock-control:not(.md-rawblock-tooltip),
+#write .md-rawblock-on-edit>.md-rawblock-tooltip,
+#write .md-rawblock:hover>.md-rawblock-container,
+#write .md-rawblock:hover>.md-rawblock-tooltip {
+  background-color: var(--blur-bg-color);
+  animation: none;
+  -webkit-animation: none;
+}
+
+/* ----- Hyperlink ----- */
+a {
+  color: var(--hyperlink-text-color);
+}
+
+a:hover {
+  color: var(--hyperlink-text-hover-color);
+}
+
+#write a {
+  text-decoration: none;
+  color: var(--hyperlink-text-color) !important;
+  background-color: transparent !important;
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+#write a:hover {
+  color: var(--hyperlink-text-hover-color) !important;
+  background-color: var(--hyperlink-bg-hover-color) !important;
+}
+
+/* ----- Math Formulas ----- */
+#write .md-inline-math {
+  /*None----- */
+  background-color: transparent;
+  transition: 150ms;
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  -ms-transition: 150ms;
+  -o-transition: 150ms;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+#write .md-inline-math:hover {
+  background-color: var(--blur-bg-color);
+}
+
+#write .md-inline-math.md-expand {
+  cursor: text;
+}
+
+/* ----- Menu ----- */
+
+.megamenu-menu {
+  background-color: var(--menu-bg-color);
+  color: var(--text-color);
+  background-image: var(--doted-bg-image);
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before,
+.megamenu-menu-header #megamenu-menu-header-title,
+#megamenu-back-btn i::before {
+  color: var(--text-color);
+}
+
+.megamenu-menu-header {
+  background-color: var(--blur-bg-color);
+
+  border-bottom: 3px solid var(--reverse-color);
+}
+
+#megamenu-content {
+  background: var(--bg-img) no-repeat center center;
+  background-size: cover;
+}
+
+.megamenu-opened header {
+  background-image: none;
+}
+
+#megamenu-back-btn {
+  border-color: transparent;
+}
+
+#recent-file-panel-action-btn {
+  background-color: var(--bg-color);
+}
+
+#recent-document-table>tbody>tr:nth-child(2n-1) {
+  background-color: var(--blur-bg-color);
+}
+
+.long-btn::before {
+  content: "";
+  background-color: var(--blur-bg-color);
+  border: 3px solid var(--blur-bg-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.long-btn {
+  color: var(--text-hover-color) !important;
+  border: 3px solid var(--blur-bg-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  width: auto;
+  backdrop-filter: blur(5px);
+}
+
+.long-btn:hover {
+  background-color: var(--blur-bg-color);
+  border: 3px solid var(--assistance-color);
+  color: var(--text-hover-color) !important;
+  box-shadow: inset var(--assistance-color) 0 0 10px 3px;
+}
+
+.long-btn:hover>i.ion-folder:before,
+.long-btn:hover>span,
+.long-btn:hover>span>span {
+  color: var(--text-hover-color) !important;
+}
+
+.megamenu-menu-panel table tr,
+.megamenu-menu-panel table tr td,
+.megamenu-menu-panel table tr th {
+  transition: 300ms !important;
+  -webkit-transition: 300ms !important;
+  -moz-transition: 300ms !important;
+  -ms-transition: 300ms !important;
+  -o-transition: 300ms !important;
+}
+
+.megamenu-menu-panel table {
+  background-color: var(--blur-bg-color);
+  backdrop-filter: blur(10px);
+  border: 10px solid transparent;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* ----- About Menu ----- */
+.about-content-main {
+  background-color: var(--blur-bg-color);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#about-content-license-button {
+  color: var(--text-color);
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#about-content-license-button:hover {
+  color: var(--text-hover-color);
+}
+
+/* ----- footer ----- */
+footer.ty-footer {
+  background: var(--footer-bg-color);
+  border-top-right-radius: 20px;
+  box-shadow: inset var(--default-shadow-color) 0 0 10px 0;
+  border: none;
+}
+
+/* ----- Dropdown Menu ----- */
+
+ul.dropdown-menu.context-menu {
+  background-color: var(--dropdownMenu-bg-color);
+}
+
+.menu-item-container a.menu-style-btn {
+  background-color: transparent;
+}
+
+/* ----- Sidebar Menu ----- */
+#typora-sidebar {
+  border-right: 2px dashed var(--reverse-color-lighter);
+  box-shadow: var(--default-shadow-color) 0 0 5px 0;
+  background-image: var(--doted-bg-image);
+}
+
+#file-library-search-panel {
+  border-bottom: 2px dashed var(--reverse-color-lighter);
+}
+
+.ty-sidebar-search-panel {
+  padding: 8px;
+}
+
+ul.dropdown-menu.megamenu-menu-list {
+  background-color: transparent;
+}
+
+/* ----- Search panel ----- */
+#md-searchpanel {
+  background: var(--searchPanel-bg-color);
+}
+
+#filesearch-case-option-btn,
+#filesearch-word-option-btn {
+  top: 12px;
+}
+
+.md-search-hit {
+  background-color: var(--md-search-hit-bg-color);
+}
+
+/* ----- Task List ----- */
+
+.md-task-list-item>input {
+  margin-left: -1.5rem;
+  top: 5px;
+}
+
+.md-task-list-item>input::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid var(--task-border-color);
+  background: var(--task-unchecked-bg-color);
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.md-task-list-item>input::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 0.6rem;
+  height: 0.3rem;
+  border: 2px solid var(--task-icon-color);
+  box-shadow: var(--default-shadow-color) 0 0 3px 0;
+  border-top: 0;
+  border-right: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+}
+
+.md-task-list-item>input:checked::before {
+  background: var(--task-checked-bg-color);
+  border: none;
+}
+
+.md-task-list-item>input:checked::after {
+  opacity: 1;
+}
+
+.md-task-list-item.task-list-done>p:first-of-type {
+  text-decoration: line-through;
+  color: var(--task-checked-text-color);
+}
+
+/* ----- Markdown Source ----- */
+
+.typora-sourceview-on #toggle-sourceview-btn {
+  background-color: var(--source-active-button);
+}
+
+#typora-source .CodeMirror-lines {
+  font-family: var(--code-font-family);
+  background-color: var(--source-bg-color);
+  box-shadow: var(--default-shadow-color) 0 0 10px 0;
+  backdrop-filter: blur(15px);
+  background-image: var(--doted-bg-image);
+}
+
+/* ----- Advanced panel ----- */
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+  box-shadow: var(--default-shadow-color) 0 0 5px 0,
+    inset var(--default-shadow-color) 0 0 5px 0;
+  border: 2px dashed var(--reverse-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#write .md-fences-adv-panel {
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-top: 35px;
+}
+
+.enable-diagrams .md-diagram .code-tooltip {
+  right: 0px;
+  bottom: auto;
+  top: -2.5em;
+}
+
+/* ----- Source Color ----- */
+
+#typora-source .cm-s-typora-default .cm-header,
+#typora-source .cm-s-typora-default .cm-property {
+  color: var(--source-head-color);
+}
+
+.cm-s-typora-default .cm-code,
+.cm-s-typora-default .cm-comment,
+#typora-source .cm-s-typora-default .cm-overlay {
+  font-family: var(--code-font-family);
+}
+
+.cm-s-typora-default .cm-atom,
+.cm-s-typora-default .cm-number {
+  color: var(--source-quote-color);
+}
+
+.cm-s-inner span.cm-header {
+  color: #e06c75;
+}
+
+.cm-s-inner span.cm-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.cm-s-inner span.cm-negative {
+  color: #e06c75;
+}
+
+.cm-s-inner span.cm-positive {
+  color: #e06c75;
+}
+
+.cm-s-inner span.cm-strong {
+  color: #d19a66;
+  font-weight: 700;
+}
+
+.cm-s-inner span.cm-header .cm-strong {
+  color: #d19a66;
+  font-weight: 700;
+}
+
+.cm-s-inner span.cm-em {
+  color: #c678dd;
+  font-style: italic;
+}
+
+.cm-s-inner span.cm-header .cm-em {
+  color: #c678dd;
+  font-style: italic;
+}
+
+.cm-s-inner span.cm-tag {
+  color: #e06c75;
+}
+
+.cm-s-inner span.cm-attribute {
+  color: #d19a66;
+}
+
+.cm-s-inner span.cm-link {
+  color: #98c379;
+  border-bottom: solid 1px #98c379;
+}
+
+.cm-s-inner span.cm-builtin {
+  color: #e06c75;
+}
+
+.cm-s-inner span.cm-keyword {
+  color: #c678dd;
+}
+
+.cm-s-inner span.cm-def {
+  color: #ff964c;
+}
+
+.cm-s-inner span.cm-atom {
+  color: #d19a66;
+}
+
+.cm-s-inner span.cm-number {
+  color: #d19a66;
+}
+
+.cm-s-inner span.cm-property {
+  color: #56b6c2;
+}
+
+.cm-s-inner span.cm-qualifier {
+  color: #d19a66;
+}
+
+.cm-s-inner span.cm-variable {
+  color: #e06c75;
+}
+
+.cm-s-inner span.cm-string {
+  color: #98c379;
+}
+
+.cm-s-inner span.cm-punctuation {
+  color: #abb2bf;
+}
+
+.cm-s-inner span.cm-operator {
+  color: #56b6c2;
+}
+
+.cm-s-inner span.cm-meta {
+  color: #7c818a;
+}
+
+.cm-s-inner span.cm-bracket {
+  color: #767f91;
+}
+
+.cm-s-inner span.cm-comment {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.cm-s-inner span.cm-error {
+  color: #e06c75;
+}
+
+.cm-s-inner span.cm-m-css.cm-variable {
+  color: #828997;
+}
+
+.cm-s-inner span.cm-m-css.cm-property {
+  color: #abb2bf;
+}
+
+.cm-s-inner span.cm-m-css.cm-atom {
+  color: #56b6c2;
+}
+
+.cm-s-inner span.cm-m-css.cm-builtin {
+  color: #56b6c2;
+}
+
+.cm-s-inner span.cm-m-lua.cm-variable {
+  color: #56b6c2;
+}
+
+/* ----- Graph ----- */
+
+#write.enable-diagrams>.md-fences:not(.md-focus) {
+  max-width: 100%;
+  margin-left: auto !important;
+}
+
+#write .md-image {
+  font-family: var(--code-font-family);
+}
+
+#write img {
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+
+#write img:hover {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+/* ----- diagram ----- */
+
+/* 修改路径颜色 */
+#write .md-diagram-panel-preview .messageLine0,
+#write .md-diagram-panel-preview .messageLine1,
+#write .md-diagram-panel-preview path {
+  stroke: var(--reverse-color-lighter) !important;
+}
+
+/* 修改箭头、时钟、日历等图标的颜色 */
+#write .md-diagram-panel-preview defs * {
+  stroke: var(--assistance-color);
+  fill: var(--assistance-color);
+}
+
+/* 修改字体颜色 */
+#write .md-diagram-panel-preview text {
+  stroke: none;
+  fill: var(--text-color) !important;
+}
+
+/* 修改节点的颜色 */
+#write .md-diagram-panel-preview circle {
+  stroke: var(--reverse-color-lighter) !important;
+  fill: var(--assistance-color) !important;
+}
+
+/* 修改边框粗细 */
+#write .md-diagram-panel-preview rect,
+#write .md-diagram-panel-preview line {
+  stroke-width: 2px !important;
+}

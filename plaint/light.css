@@ -1,0 +1,71 @@
+/* light.css */
+:root {
+  /* Default Unit Color */
+  --assistance-color: #ff9900;
+  --reverse-color: #000000;
+  --reverse-color-light: #1c1c1c;
+  --reverse-color-lighter: #363636;
+  --reverse-blur: #00000050;
+  /* Background */
+  --bg-img: url(./img/Ripple.jpg);
+  --bg-color: #dbdbdb;
+  --theme-color-light: #d1d1d1;
+  --theme-color: #ffffff;
+  --side-bar-bg-color: #ffffff;
+  --blur-bg-color: var(--default-lighter-color);
+  /* Text color */
+  --text-color: var(--reverse-color-lighter);
+  --text-hover-color: #000000;
+  --text-selected-color: #ffffffbd;
+  /* Table Color */
+  --table-bg-color: var(--default-lighter-color);
+  --table-head-color: #20adff;
+  --table-head-selected-color: #00ccff;
+  --table-cell-color: transparent;
+  --table-cell-selected-color: var(--default-lighter-color);
+  /* Block Quote Color */
+  --quote-background-color: #00665510;
+  --quote-border-color: #004040;
+  /* Selection Color */
+  --select-text-bg-color: var(--default-darker-color);
+  --select-text-font-color: unset;
+  /* Code Color */
+  --codeMirror-bg-color: var(--default-lighter-color);
+  --codeMirror-gutter-border-color: var(--reverse-color);
+  --codeMirror-lineNumber-color: var(--reverse-color);
+  --codeMirror-cursor-color: #000000;
+  --code-tooltip-color: var(--default-lighter-color);
+  --code-bg-color: #00aeff70;
+  --code-text-color: #004770;
+  /* Mark Color */
+  --mark-text-color: #000000;
+  --mark-bg-color: #00d87e;
+  --mark-hover-bg-color: #00ff95;
+  /* Menu Color */
+  --menu-bg-color: #ffffff;
+  --active-file-bg-color: var(--default-darker-color);
+  /* Footer Color */
+  --footer-bg-color: var(--default-lighter-color);
+  /* Dropdown Menu Color*/
+  --dropdownMenu-bg-color: transparent;
+  /* Search Panel Color*/
+  --searchPanel-bg-color: #ffffff;
+  --md-search-hit-bg-color: #ff000050;
+  /* Task List Color */
+  --task-icon-color: #000000;
+  --task-border-color: #000000;
+  --task-unchecked-bg-color: #ffffff;
+  --task-checked-bg-color: #00ae00;
+  --task-checked-text-color: #808080;
+  /* Source Color */
+  --source-active-button: var(--default-lighter-color);
+  --source-bg-color: var(--theme-color);
+  --source-head-color: #000000;
+  --source-quote-color: #463636;
+  /* Hyperlink Color */
+  --hyperlink-text-color: #db9600;
+  --hyperlink-text-hover-color: #ffae00;
+  --hyperlink-bg-hover-color: #ffae0033;
+  /* em color */
+  --inactivate: #666666;
+}
