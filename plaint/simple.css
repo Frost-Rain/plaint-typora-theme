@@ -2,4 +2,6 @@
 :root {
   --write-bg-color: var(--bg-color);
   --back-drop-filter: none;
+  /* Dropdown Menu Color*/
+  --dropdownMenu-bg-color: var(--bg-color);
 }
