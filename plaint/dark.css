@@ -46,8 +46,6 @@
   --active-file-bg-color: var(--default-lighter-color);
   /* Footer Color */
   --footer-bg-color: var(--default-darker-color);
-  /* Dropdown Menu Color*/
-  --dropdownMenu-bg-color: transparent;
   /* Search Panel Color*/
   --searchPanel-bg-color: #2f2f2f;
   --md-search-hit-bg-color: #ff000050;
