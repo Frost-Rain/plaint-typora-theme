@@ -2,4 +2,6 @@
 :root {
   --write-bg-color: transparent;
   --back-drop-filter: blur(15px);
+  /* Dropdown Menu Color*/
+  --dropdownMenu-bg-color: transparent;
 }
