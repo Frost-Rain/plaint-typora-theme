@@ -119,6 +119,13 @@ footer.ty-footer:before {
   text-shadow: 0 0 5px;
 }
 
+/* ----- Del ----- */
+#write del {
+  color: var(--text-del-color);
+  font-style: italic;
+  text-decoration: line-through;
+}
+
 /* ----- em ----- */
 #write [md-inline="em"].md-pair-s {
   color: var(--inactivate);

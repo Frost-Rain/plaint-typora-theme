@@ -15,6 +15,7 @@
   --blur-bg-color: var(--default-darker-color);
   /* Text color */
   --text-color: var(--reverse-color-lighter);
+  --text-del-color: gray;
   --text-hover-color: #ffffff;
   --text-selected-color: #000000bd;
   /* Table Color */
