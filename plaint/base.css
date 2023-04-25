@@ -361,13 +361,13 @@ footer.ty-footer:before {
 
 #write .md-htmlblock table td {
   background-color: var(--table-cell-color);
-  padding: 12px 24px;
+  padding: 5px 10px;
 }
 
 #write .md-htmlblock table th {
   background-color: var(--table-head-color);
   background-image: var(--doted-bg-image);
-  padding: 12px 24px;
+  padding: 5px 10px;
 }
 
 #write .md-htmlblock table td:enabled,
