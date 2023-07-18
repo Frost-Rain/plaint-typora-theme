@@ -7,6 +7,7 @@
   --reverse-color-lighter: #dbdbdb;
   --reverse-blur: #ffffff50;
   /* Background */
+  --write-bg-color: #00000080;
   --bg-img: url(./img/Dark.jpg);
   --bg-color: #363636;
   --theme-color-light: #1c1c1c;
