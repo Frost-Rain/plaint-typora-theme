@@ -5,7 +5,7 @@ my typora theme
 
 replace the background using your own img.
 
-rename the image to `Dark.jpg` or `Light.jpg`, and save them to `plaint/imag/`.
+rename the image to `Dark.jpg` or `Light.jpg`, and save them to `plaint/img/`.
 
 ## Font
 
